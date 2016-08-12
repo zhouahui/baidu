@@ -1,0 +1,132 @@
+/*头部*/
+.m-head{
+    height: 56px;
+    background: #2189bf;
+    position: relative;
+}
+.m-head .logo{
+    position: absolute;
+    top:10px;
+    left: 50px;
+    height: 36px;
+    width: 36px;
+    background: #fff;
+}
+.m-head .logo:after{
+    content: "";
+    position: absolute;
+    right: -3px;
+    top:18px;
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    display: block;
+    border: 3px solid #2189bf;
+}
+.m-head .login-box{
+    position: absolute;
+    right: 100px;
+    top:14px;
+}
+.m-head .login-box .search{
+    position: relative;
+    /*padding-right: 60px;*/
+}
+.m-head .login-box .search .u-search{
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50px;
+    padding: 0 10px 0 40px;
+    width: 170px;
+    transition: .2s width ease-out;
+}
+.m-head .login-box .search .u-search:focus {
+    width:310px;
+}
+.m-head .login-box .search .icon-search {
+    position: absolute;
+    left: 10px;
+    top:5px;
+    transition: .2s all ease-out;
+}
+.m-head .login-box .login{
+    padding-left: 14px;
+    padding-top:3px;
+}
+.m-head .login-box .login a{
+    color: #fff;
+}
+/*图标*/
+[class^='icon'] {
+    display: inline-block;
+    background: url("../image/sprite.png") no-repeat;
+}
+.icon-search {
+    width: 20px;
+    height: 20px;
+    background-position:-9px -738px;
+}
+.icon-user {
+    width: 18px;
+    height: 18px;
+    background-position: -11px -819px;
+}
+/*中心*/
+.l-container{
+    position: absolute;
+    top:56px;
+    left: 0;
+}
+/*滑动*/
+.m-slider{
+    position: relative;
+    width: 260px;
+    height: 100%;
+    background: #2a2e3d;
+}
+.m-slider .userMsg {
+    height: 150px;
+}
+.m-slider .user-face {
+    height: 90px;
+}
+.m-slider .user-face .face {
+    position: absolute;
+    left: 55px;
+    top:16px;
+    height: 56px;
+    border:1px solid #b2aaad;
+    border-radius: 50%;
+}
+.m-slider .user-face b {
+    width: 50px;
+    height: 50px;
+    background: #b2aaad;
+    display: block;
+    border-radius: 50%;
+    margin:2.5px 0 0 2.5px;
+}
+.m-slider .user-face a{
+    line-height: 90px;
+    font-size: 18px;
+    padding-left:130px;
+    color: #f6f5f5;
+    
+}
+.m-slider .user-info li{
+    float: left;
+    width: 50%;
+    color: #6e8095;
+    height: 30px;
+    box-sizing: border-box;
+}
+.m-slider .user-info li.item1{
+    text-align: right;
+    padding-right: 30px;
+}
+.m-slider .user-info li.item2{
+    margin-left: -1px;
+    border-left: 1px solid #313645;
+    padding-left:30px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>污染城市列表</h3>
+<ul id="aqi-list"></ul>
+<script type="text/javascript">
+    var aqiData = [
+        ["北京", 90],
+        ["上海", 50],
+        ["福州", 10],
+        ["广州", 50],
+        ["成都", 90],
+        ["西安", 100]
+    ];
+    (function () {
+        var chinsesNumbers = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
+        var contentStr = "";
+        //aqiDate.filter(element)
+        //function(element){return element[1]>60;}
+        //返回数组中大于指定数值的元素
+        //排序
+        //循环遍历赋值li
+        //id下的html=xxx
+        aqiData.filter(function (element) {
+            return element[1] > 60;
+        })
+                .sort(function (a, b) {
+                    return b[1] - a[1];
+                })
+                .forEach(function (element, intex) {
+                    contentStr += "<li>第" + chinsesNumbers[intex] + "名:" + element[0] + "," + element[1] + "</li>"
+                })
+        document.getElementById("aqi-list").innerHTML = contentStr;
+    })();
+
+</script>
+</body>
+</html>

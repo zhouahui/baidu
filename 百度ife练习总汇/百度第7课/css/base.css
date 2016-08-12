@@ -1,0 +1,36 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font:12px/1.5 "Î¢ÈíÑÅºÚ",arial,sans-sreif,"ËÎÌå" ;
+    background: #EDF0F5;
+}
+html,
+.l-container {
+    min-width: 1280px;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+a{
+    color: #323333;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.clearFix {
+    *zoom: 1;
+}
+.clearFix:before, .clearFix:after {
+    content: '';
+    display: table;
+}
+.clearFix:after{
+    clear: both;
+    overflow: hidden;
+}

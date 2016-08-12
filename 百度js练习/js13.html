@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>
+    请输入北京今天空气质量:
+    <input id="aqi-input" type="text">
+</label>
+<button id="button">确认填写</button>
+<div>
+    您输入的值是:
+    <span id="aqi-display"></span>
+</div>
+<script type="text/javascript">
+//    任务目的
+//
+//    JavaScript初体验
+//    初步明白JavaScript的简单基本语法，如变量、函数
+//    初步了解JavaScript的事件是什么
+////    初步了解JavaScript中的DOM是什么
+    (function () {
+        alert("自己调用")
+    })();
+    (function () {
+//        按钮button绑定一个点击事件,在事件处理函数中,获取aqi-input输入的值,并显示在aqi-display中
+        var $ = function (id) {
+            return document.getElementById(id)
+        }
+        var handler = function () {
+            var num = parseInt($("aqi-input").value);
+            if ((!isNaN(num)) && (num >= 0) && (num <= 500)) {
+                $("aqi-display").innerHTML = num; //向span插入num
+            } else {
+                alert ($("aqi-input").value + "不是有效AQI,请重新输入0-500的有效整数")
+            }
+        }
+        $("button").onclick = function(){
+            handler();
+        }
+        $("aqi-input").onkeyup = function(event){
+            if(event.keyCode===13){
+                handler();
+            }
+        }
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #FECB16;
+}
+.zhengfx{
+    width: 400px;
+    height: 200px;
+    margin:0 auto;
+    line-height: 100%;
+    background: #ccc;
+}
+.padd{
+    height: 50%;
+    width: 100%;
+    display: block;
+    background: #333333;
+}
